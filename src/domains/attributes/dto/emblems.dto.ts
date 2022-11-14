@@ -1,10 +1,6 @@
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber } from 'class-validator';
 
 export class EmblemsDto {
-  @IsNotEmpty()
-  @IsString()
-  name: string;
-
   @IsNotEmpty()
   @IsNumber()
   level: number;

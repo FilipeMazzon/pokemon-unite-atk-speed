@@ -25,7 +25,14 @@ export class AttributesService {
 
     return baseAtkSpeed.map((stats) => {
       return CalculateFramePerAtk(
-        calculateAtkSpeed(pokemon, stats, buffs, items, atkSpeedDto.emblems),
+        calculateAtkSpeed(
+          pokemon,
+          stats,
+          buffs,
+          items,
+          atkSpeedDto.emblems,
+          atkSpeedDto.additionalBuff,
+        ),
       );
     });
   }

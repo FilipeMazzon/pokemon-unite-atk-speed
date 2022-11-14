@@ -1,4 +1,4 @@
-import { IsOptional, ValidateNested } from 'class-validator';
+import { IsNumber, IsOptional, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ItemsDto } from './items.dto';
 import { BuffDto } from './buffDto';
@@ -19,4 +19,8 @@ export class AtkSpeedDto {
   @ValidateNested()
   @Type(() => EmblemsDto)
   emblems: EmblemsDto;
+
+  @IsOptional()
+  @IsNumber()
+  additionalBuff: number;
 }
