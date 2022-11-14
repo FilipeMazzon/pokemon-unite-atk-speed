@@ -8,4 +8,8 @@ export class BuffDto {
   @IsOptional()
   @IsNumber()
   stack?: number;
+
+  @IsOptional()
+  @IsString()
+  form: string;
 }

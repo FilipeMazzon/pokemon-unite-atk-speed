@@ -4,4 +4,5 @@ export enum PokemonNamesEnum {
   absol = 'absol',
   buzzwole = 'buzzwole',
   'mr.mime' = 'mr.mime',
+  aegislash = 'aegislash',
 }
