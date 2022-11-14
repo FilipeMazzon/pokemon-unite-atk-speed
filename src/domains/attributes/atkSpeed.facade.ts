@@ -4,6 +4,7 @@ import { CalculateBuffsSpeed } from '../buffs/helpers/calculateBuffsSpeed.helper
 import { BuffDto } from './dto/buffDto';
 import { ItemsDto } from './dto/items.dto';
 import { EmblemsDto } from './dto/emblems.dto';
+import { calculateItemsSpeed } from '../items/calculateItemsSpeed.helper';
 
 export const calculateAtkSpeed = (
   pokemon: PokemonNamesEnum,
@@ -13,13 +14,18 @@ export const calculateAtkSpeed = (
   _emblems: EmblemsDto,
 ) => {
   let atkSpeed = baseStats.atkSpeed;
-  atkSpeed = CalculateBuffsSpeed(
-    atkSpeed,
-    pokemon,
-    baseStats.level,
-    buffsMap,
-    itemsMap,
-  );
+  if (buffsMap.size) {
+    atkSpeed = CalculateBuffsSpeed(
+      atkSpeed,
+      pokemon,
+      baseStats.level,
+      buffsMap,
+      itemsMap,
+    );
+  }
+  if (itemsMap.size) {
+    atkSpeed = calculateItemsSpeed(atkSpeed, itemsMap);
+  }
 
   return atkSpeed;
 };

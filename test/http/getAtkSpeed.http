@@ -6,5 +6,8 @@ Content-Type: application/json
     "name": "boost",
     "stack": 2
   }],
-  "items": []
+  "items": [{
+    "name": "Muscle Band",
+    "level": 30
+  }]
 }

@@ -1,10 +1,14 @@
 import { ItemsNameEnum } from './itemsName.enum';
 
-export const ITEMS_MAP = {
-  [ItemsNameEnum.scarf]: (_: number) => {
-    return 9;
-  },
-  [ItemsNameEnum['Muscle Band']]: (level: number) => {
-    return Math.floor(level / 2) * 0.5;
-  },
-};
+const ItemsSpeedMap: Map<ItemsNameEnum, (level: number) => number> = new Map();
+
+ItemsSpeedMap.set(
+  ItemsNameEnum.scarf,
+  (level: number) => Math.floor(level / 2) * 0.6,
+);
+ItemsSpeedMap.set(
+  ItemsNameEnum['Muscle Band'],
+  (level: number) => Math.floor(level / 2) * 0.5,
+);
+
+export default ItemsSpeedMap;
