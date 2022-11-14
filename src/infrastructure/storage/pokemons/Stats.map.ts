@@ -1,5 +1,4 @@
 import { PokemonStats } from '../../../domains/attributes/interfaces/pokemonStats.interface';
-import { getDecidueyeStats } from './decidueye/statsBase.helper';
 import { PokemonNamesEnum } from '../../enums/pokemonNames.enum';
 import { getGreninjaStats } from './greninja/statsBase.helper';
 import { getAbsolStats } from './absol/statsBase.helper';
@@ -14,6 +13,8 @@ import { getTyranitarStats } from './tyranitar/statsBase.helper';
 import { getBlisseyStats } from './blissey/statsBase.helper';
 import { getEldegossStats } from './eldegoss/statsBase.helper';
 import { getWigglytuffStats } from './wigglytuff/statsBase.helper';
+import { getDecidueyeStats } from './decidueye/statsBase.helper';
+import { getCinderaceStats } from './cinderace/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -31,5 +32,6 @@ PokemonStatsMap.set(PokemonNamesEnum.tyranitar, getTyranitarStats());
 PokemonStatsMap.set(PokemonNamesEnum.blissey, getBlisseyStats());
 PokemonStatsMap.set(PokemonNamesEnum.eldegoss, getEldegossStats());
 PokemonStatsMap.set(PokemonNamesEnum.wigglytuff, getWigglytuffStats());
+PokemonStatsMap.set(PokemonNamesEnum.cinderace, getCinderaceStats());
 
 export default PokemonStatsMap;

@@ -13,4 +13,5 @@ export enum PokemonNamesEnum {
   blissey = 'blissey',
   eldegoss = 'eldegoss',
   wigglytuff = 'wigglytuff',
+  cinderace = 'cinderace',
 }
