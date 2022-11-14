@@ -10,6 +10,7 @@ import { getAzumarillStats } from './azumarill/statsBase.helper';
 import { getBlastoiseStats } from './blastoise/statsBase.helper';
 import { getMamoswineStats } from './mamoswine/statsBase.helper';
 import { getMachampStats } from './machamp/statsBase.helper';
+import { getTyranitarStats } from './tyranitar/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -23,5 +24,6 @@ PokemonStatsMap.set(PokemonNamesEnum.azumarill, getAzumarillStats());
 PokemonStatsMap.set(PokemonNamesEnum.blastoise, getBlastoiseStats());
 PokemonStatsMap.set(PokemonNamesEnum.mamoswine, getMamoswineStats());
 PokemonStatsMap.set(PokemonNamesEnum.machamp, getMachampStats());
+PokemonStatsMap.set(PokemonNamesEnum.tyranitar, getTyranitarStats());
 
 export default PokemonStatsMap;
