@@ -1,4 +1,4 @@
-import { ItemsNameEnum } from './itemsName.enum';
+import { ItemsNameEnum } from '../../domains/items/itemsName.enum';
 
 const ItemsSpeedMap: Map<ItemsNameEnum, (level: number) => number> = new Map();
 

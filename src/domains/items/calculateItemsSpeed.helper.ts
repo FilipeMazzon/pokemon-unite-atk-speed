@@ -1,6 +1,6 @@
 import { ItemsDto } from '../attributes/dto/items.dto';
 import { ItemsNameEnum } from './itemsName.enum';
-import ItemsSpeedMap from './items.map';
+import ItemsSpeedMap from '../../infrastructure/storage/items.map';
 
 export const calculateItemsSpeed = (
   currentSpeed,

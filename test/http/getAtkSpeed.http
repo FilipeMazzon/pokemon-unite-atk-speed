@@ -4,10 +4,13 @@ Content-Type: application/json
 {
   "buffs": [{
     "name": "boost",
-    "stack": 2
+    "stack": 4
   }],
   "items": [{
     "name": "Muscle Band",
+    "level": 30
+  }, {
+    "name": "scarf",
     "level": 30
   }]
 }

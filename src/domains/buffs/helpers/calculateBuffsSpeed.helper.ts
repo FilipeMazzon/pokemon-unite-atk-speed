@@ -4,7 +4,7 @@ import { BuffDto } from '../../attributes/dto/buffDto';
 import { GenericBuffsEnum } from '../enums/genericBuffs.enum';
 import { BUFF_GENERIC } from '../../../infrastructure/storage/buffGeneric.constant';
 import { ItemsNameEnum } from '../../items/itemsName.enum';
-import SpeedBuffMap from './pokemons/pokemonBuffMap.helper';
+import SpeedBuffMap from '../../../infrastructure/storage/pokemons/pokemonBuffMap.helper';
 
 const genericBuffs = (
   currentSpeed: number,

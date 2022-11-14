@@ -5,7 +5,7 @@ import { BuffDto } from './dto/buffDto';
 import { ItemsDto } from './dto/items.dto';
 import { EmblemsDto } from './dto/emblems.dto';
 import { calculateItemsSpeed } from '../items/calculateItemsSpeed.helper';
-import { getBonusSpeedRedEmblems } from '../emblems/red-emblems/getBonusSpeedRedEmblems';
+import { getBonusSpeedRedEmblems } from '../../infrastructure/storage/red-emblems/getBonusSpeedRedEmblems';
 
 export const calculateAtkSpeed = (
   pokemon: PokemonNamesEnum,
