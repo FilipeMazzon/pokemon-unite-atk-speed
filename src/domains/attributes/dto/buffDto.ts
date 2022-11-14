@@ -1,4 +1,10 @@
-import { IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-validator';
+import {
+  IsBoolean,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsString,
+} from 'class-validator';
 
 export class BuffDto {
   @IsNotEmpty()
@@ -12,4 +18,8 @@ export class BuffDto {
   @IsOptional()
   @IsString()
   form: string;
+
+  @IsOptional()
+  @IsBoolean()
+  isPlus: boolean;
 }

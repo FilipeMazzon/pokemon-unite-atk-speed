@@ -8,4 +8,5 @@ export enum PokemonNamesEnum {
   azumarill = 'azumarill',
   blastoise = 'blastoise',
   mamoswine = 'mamoswine',
+  machamp = 'machamp',
 }
