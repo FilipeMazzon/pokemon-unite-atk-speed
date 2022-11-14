@@ -16,7 +16,7 @@ export const calculateAtkSpeed = (
   additionalBuff = 0,
 ) => {
   let atkSpeed = baseStats.atkSpeed;
-  if (buffsMap.size) {
+  if (buffsMap?.size) {
     atkSpeed = CalculateBuffsSpeed(
       atkSpeed,
       pokemon,
@@ -25,7 +25,7 @@ export const calculateAtkSpeed = (
       itemsMap,
     );
   }
-  if (itemsMap.size) {
+  if (itemsMap?.size) {
     atkSpeed = calculateItemsSpeed(atkSpeed, itemsMap);
   }
 

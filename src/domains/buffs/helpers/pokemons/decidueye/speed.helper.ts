@@ -7,18 +7,17 @@ export const decidueyeSpeed = (
   level: number,
   boostMap: Map<string, BuffDto>,
 ) => {
+  let newSpeed = currentSpeed;
   if (boostMap.has(DecidueyeBuffEnum.Leafage)) {
-    currentSpeed += DECIDUEYE_ATK_SPEED_BUFF[DecidueyeBuffEnum.Leafage]();
+    newSpeed += DECIDUEYE_ATK_SPEED_BUFF[DecidueyeBuffEnum.Leafage]();
   }
   if (boostMap.has(DecidueyeBuffEnum.boost)) {
     const aux = boostMap.get(DecidueyeBuffEnum.boost);
-    currentSpeed += DECIDUEYE_ATK_SPEED_BUFF[DecidueyeBuffEnum.boost](
-      aux.stack,
-    );
+    newSpeed += DECIDUEYE_ATK_SPEED_BUFF[DecidueyeBuffEnum.boost](aux.stack);
   }
   if (boostMap.has(DecidueyeBuffEnum['Razor Leaf'])) {
-    currentSpeed +=
+    newSpeed +=
       DECIDUEYE_ATK_SPEED_BUFF[DecidueyeBuffEnum['Razor Leaf']](level);
   }
-  return currentSpeed;
+  return newSpeed;
 };

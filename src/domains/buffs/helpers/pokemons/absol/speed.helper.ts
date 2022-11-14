@@ -7,8 +7,9 @@ export const absolSpeed = (
   level: number,
   boostMap: Map<string, BuffDto>,
 ) => {
+  let newSpeed = currentSpeed;
   if (boostMap.has(AbsolBuffEnum['suckerPunch+'])) {
-    currentSpeed += ABSOL_ATK_SPEED_BUFF[AbsolBuffEnum['suckerPunch+']]();
+    newSpeed += ABSOL_ATK_SPEED_BUFF[AbsolBuffEnum['suckerPunch+']]();
   }
-  return currentSpeed;
+  return newSpeed;
 };
