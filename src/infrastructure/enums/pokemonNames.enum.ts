@@ -5,4 +5,5 @@ export enum PokemonNamesEnum {
   buzzwole = 'buzzwole',
   'mr.mime' = 'mr.mime',
   aegislash = 'aegislash',
+  azumarill = 'azumarill',
 }

@@ -6,6 +6,7 @@ import { getAbsolStats } from './absol/statsBase.helper';
 import { getBuzzWoleStats } from './buzzwole/statsBase.helper';
 import { getMrmimeStats } from './mr.mime/statsBase.helper';
 import { getAegislashStats } from './aegislash/statsBase.helper';
+import { getAzumarillStats } from './azumarill/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -15,5 +16,6 @@ PokemonStatsMap.set(PokemonNamesEnum.absol, getAbsolStats());
 PokemonStatsMap.set(PokemonNamesEnum.buzzwole, getBuzzWoleStats());
 PokemonStatsMap.set(PokemonNamesEnum['mr.mime'], getMrmimeStats());
 PokemonStatsMap.set(PokemonNamesEnum.aegislash, getAegislashStats());
+PokemonStatsMap.set(PokemonNamesEnum.azumarill, getAzumarillStats());
 
 export default PokemonStatsMap;
