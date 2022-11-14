@@ -1,0 +1,10 @@
+POST {{host}}/attributes/atk-speed/decidueye
+Content-Type: application/json
+
+{
+  "buffs": [{
+    "name": "boost",
+    "stack": 2
+  }],
+  "items": []
+}
