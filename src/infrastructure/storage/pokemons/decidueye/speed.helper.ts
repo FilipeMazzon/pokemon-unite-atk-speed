@@ -1,6 +1,6 @@
-import { BuffDto } from '../../../../attributes/dto/buffDto';
+import { BuffDto } from '../../../../domains/attributes/dto/buffDto';
 import { DecidueyeBuffEnum } from './decidueyeBuff.enum';
-import { DECIDUEYE_ATK_SPEED_BUFF } from '../../../../../infrastructure/storage/pokemons/decidueye/atkSpeedBuff.constant';
+import { DECIDUEYE_ATK_SPEED_BUFF } from './atkSpeedBuff.constant';
 
 export const decidueyeSpeed = (
   currentSpeed: number,

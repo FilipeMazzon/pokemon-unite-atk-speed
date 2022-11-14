@@ -1,4 +1,4 @@
-import { DecidueyeBuffEnum } from '../../../../domains/buffs/helpers/pokemons/decidueye/decidueyeBuff.enum';
+import { DecidueyeBuffEnum } from './decidueyeBuff.enum';
 
 export const DECIDUEYE_ATK_SPEED_BUFF = {
   [DecidueyeBuffEnum.Leafage]: () => 25,

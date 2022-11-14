@@ -1,5 +1,5 @@
-import { BuffDto } from '../../../../attributes/dto/buffDto';
-import { ABSOL_ATK_SPEED_BUFF } from '../../../../../infrastructure/storage/pokemons/absol/atkSpeedBuff.constant';
+import { BuffDto } from '../../../../domains/attributes/dto/buffDto';
+import { ABSOL_ATK_SPEED_BUFF } from './atkSpeedBuff.constant';
 import { AbsolBuffEnum } from './absolBuff.enum';
 
 export const absolSpeed = (

@@ -1,5 +1,5 @@
 import { PokemonNamesEnum } from 'src/infrastructure/enums/pokemonNames.enum';
-import PokemonStatsMap from '../../../infrastructure/storage/Stats.map';
+import PokemonStatsMap from '../../../infrastructure/storage/pokemons/Stats.map';
 import { BadGatewayException } from '@nestjs/common';
 import { PokemonStats } from '../interfaces/pokemonStats.interface';
 
