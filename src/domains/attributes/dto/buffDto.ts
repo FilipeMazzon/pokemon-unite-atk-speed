@@ -17,9 +17,9 @@ export class BuffDto {
 
   @IsOptional()
   @IsString()
-  form: string;
+  form?: string;
 
   @IsOptional()
   @IsBoolean()
-  isPlus: boolean;
+  isPlus?: boolean;
 }

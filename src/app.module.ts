@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BuffsModule } from './domains/buffs/buffs.module';
 import { AttributesModule } from './domains/attributes/attributes.module';
+import { PokemonsModule } from './domains/pokemons/pokemons.module';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { AttributesModule } from './domains/attributes/attributes.module';
     // MongooseModule.forRoot(process.env.MONGO_URL),
     BuffsModule,
     AttributesModule,
+    PokemonsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
