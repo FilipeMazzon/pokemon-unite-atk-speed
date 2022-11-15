@@ -12,7 +12,7 @@ export class PokemonsController {
     return this.pokemonsService.findNames();
   }
 
-  @Get(':name')
+  @Get('/stats/:name')
   findByName(@Param('name') name: string): PokemonStats[] {
     return this.pokemonsService.findByName(name as PokemonNamesEnum);
   }
