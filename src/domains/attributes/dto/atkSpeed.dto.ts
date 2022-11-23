@@ -8,19 +8,19 @@ export class AtkSpeedDto {
   @IsOptional()
   @ValidateNested({ each: true })
   @Type(() => BuffDto)
-  buffs: BuffDto[];
+  buffs?: BuffDto[];
 
   @IsOptional()
   @ValidateNested({ each: true })
   @Type(() => ItemsDto)
-  items: ItemsDto[];
+  items?: ItemsDto[];
 
   @IsOptional()
   @ValidateNested()
   @Type(() => EmblemsDto)
-  emblems: EmblemsDto;
+  emblems?: EmblemsDto;
 
   @IsOptional()
   @IsNumber()
-  additionalBuff: number;
+  additionalBuff?: number;
 }

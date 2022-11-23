@@ -30,7 +30,7 @@ export const calculateAtkSpeed = (
   }
 
   if (emblems?.level) {
-    atkSpeed = getBonusSpeedRedEmblems(emblems.level);
+    atkSpeed += getBonusSpeedRedEmblems(emblems.level);
   }
   if (additionalBuff) {
     atkSpeed += additionalBuff;

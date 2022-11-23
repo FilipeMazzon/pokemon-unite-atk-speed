@@ -5,7 +5,7 @@ import { BuffsService } from './buffs.service';
 export class BuffsController {
   constructor(private readonly buffsService: BuffsService) {}
 
-  @Get()
+  @Get('/')
   findGenericBuffsOptions() {
     return this.buffsService.findGenericBuffsOptions();
   }
