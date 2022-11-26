@@ -1,10 +1,10 @@
 import { PokemonNamesEnum } from 'src/infrastructure/enums/pokemonNames.enum';
-import SpeedBuffMap from '../../../infrastructure/storage/pokemons/pokemonBuffMap.helper';
 import { PokemonBuffName } from '../interfaces/pokemonBuffName.interface';
 import { PokemonBuffTypesEnum } from '../enums/pokemonBuffTypes.enum';
 import { AegislashBuffEnum } from '../../../infrastructure/storage/pokemons/aegislash/aegislashBuff.enum';
 import { DecidueyeBuffEnum } from '../../../infrastructure/storage/pokemons/decidueye/decidueyeBuff.enum';
 import { CinderaceBuffEnum } from '../../../infrastructure/storage/pokemons/cinderace/cinderaceBuff.enum';
+import pokemonsBuffsNamesMap from '../../../infrastructure/storage/buffNames.map';
 
 export const createDefaultOptions = (skillName: string): PokemonBuffName => {
   return {
@@ -21,11 +21,6 @@ export const createDefaultOptions = (skillName: string): PokemonBuffName => {
     ],
   };
 };
-export const expecitRulesPokemons = new Set([
-  PokemonNamesEnum.cinderace,
-  PokemonNamesEnum.aegislash,
-  PokemonNamesEnum.decidueye,
-]);
 
 export const mapRules = new Map<
   string,
@@ -60,6 +55,10 @@ mapRules.set(
       {
         name: DecidueyeBuffEnum.boost,
         options: [
+          {
+            name: '0',
+            type: PokemonBuffTypesEnum.stack,
+          },
           {
             name: '1',
             type: PokemonBuffTypesEnum.stack,
@@ -108,16 +107,15 @@ mapRules.set(
 );
 
 export const getBuffNames = (pokemon: PokemonNamesEnum): PokemonBuffName[] => {
-  const speedBuffs = SpeedBuffMap.get(pokemon);
-  if (!speedBuffs) {
+  const speedBuffsNames = pokemonsBuffsNamesMap.get(pokemon);
+  console.log(`pokemon: ${pokemon}, buffs:${speedBuffsNames}`);
+  if (!speedBuffsNames) {
     return [];
   }
-  const speedBuffsNames = Object.keys(speedBuffs);
-  if (!expecitRulesPokemons.has(pokemon)) {
-    return speedBuffsNames.map(createDefaultOptions);
-  }
   return speedBuffsNames.map((buffName: string) => {
+    console.log('buff Name ', buffName);
     const moveRule = mapRules.get(buffName);
+    console.log('move rule', moveRule);
     if (moveRule) {
       const pokemonRule = moveRule.get(pokemon);
       if (pokemonRule) {

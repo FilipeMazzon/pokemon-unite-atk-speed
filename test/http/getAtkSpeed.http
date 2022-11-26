@@ -1,15 +1,26 @@
-POST {{host}}/attributes/atk-speed/aegislash
+POST {{host}}/attributes/atk-speed/decidueye
 Content-Type: application/json
 
 {
-  "buffs": [{
-    "name": "stanceForm",
-    "form": "sword"
-  }, {
-    "name": "stanceChangeTemporary"
-  }],
-  "items": [{
-    "name": "Muscle Band",
-    "level": 30
-  }]
+  "buffs": [
+    {
+      "name": "boost",
+      "stack": 4
+    },
+    {
+      "name": "Razor Leaf"
+    },
+    {
+      "name": "Help hands"
+    }
+  ],
+  "items": [
+    {
+      "name": "Muscle Band",
+      "level": 30
+    }, {
+      "name": "scarf",
+      "level": 30
+    }
+  ]
 }
