@@ -25,6 +25,9 @@ import { getPikachuStats } from './pikachu/statsBase.helper';
 import { getDuraludonStats } from './duraludon/statsBase.helper';
 import { getVenusaurStats } from './venusaur/statsBase.helper';
 import { getTalonflameStats } from './talonflame/statsBase.helper';
+import { getHoopaStats } from './hoopa/statsBase.helper';
+import { getLucarioStats } from './lucario/statsBase.helper';
+import { getSnorlaxStats } from './snorlax/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -53,5 +56,8 @@ PokemonStatsMap.set(PokemonNamesEnum.cramorant, getCramorantStats());
 PokemonStatsMap.set(PokemonNamesEnum.duraludon, getDuraludonStats());
 PokemonStatsMap.set(PokemonNamesEnum.venusaur, getVenusaurStats());
 PokemonStatsMap.set(PokemonNamesEnum.talonflame, getTalonflameStats());
+PokemonStatsMap.set(PokemonNamesEnum.hoopa, getHoopaStats());
+PokemonStatsMap.set(PokemonNamesEnum.lucario, getLucarioStats());
+PokemonStatsMap.set(PokemonNamesEnum.snorlax, getSnorlaxStats());
 
 export default PokemonStatsMap;
