@@ -24,6 +24,7 @@ import { getGardevoirStats } from './gardevoir/statsBase.helper';
 import { getPikachuStats } from './pikachu/statsBase.helper';
 import { getDuraludonStats } from './duraludon/statsBase.helper';
 import { getVenusaurStats } from './venusaur/statsBase.helper';
+import { getTalonflameStats } from './talonflame/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -51,5 +52,6 @@ PokemonStatsMap.set(PokemonNamesEnum.cinderace, getCinderaceStats());
 PokemonStatsMap.set(PokemonNamesEnum.cramorant, getCramorantStats());
 PokemonStatsMap.set(PokemonNamesEnum.duraludon, getDuraludonStats());
 PokemonStatsMap.set(PokemonNamesEnum.venusaur, getVenusaurStats());
+PokemonStatsMap.set(PokemonNamesEnum.talonflame, getTalonflameStats());
 
 export default PokemonStatsMap;
