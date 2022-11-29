@@ -18,6 +18,7 @@ import { getCinderaceStats } from './cinderace/statsBase.helper';
 import { getCramorantStats } from './cramorant/statsBase.helper';
 import { getAlolaNinetalesStats } from './alola ninetales/statsBase.helper';
 import { getSlowbroStats } from './slowbro/statsBase.helper';
+import { getDelphoxStats } from './delphox/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -25,6 +26,7 @@ PokemonStatsMap.set(PokemonNamesEnum.decidueye, getDecidueyeStats());
 PokemonStatsMap.set(PokemonNamesEnum.alolaNinetales, getAlolaNinetalesStats());
 PokemonStatsMap.set(PokemonNamesEnum.greninja, getGreninjaStats());
 PokemonStatsMap.set(PokemonNamesEnum.absol, getAbsolStats());
+PokemonStatsMap.set(PokemonNamesEnum.delphox, getDelphoxStats());
 PokemonStatsMap.set(PokemonNamesEnum.slowbro, getSlowbroStats());
 PokemonStatsMap.set(PokemonNamesEnum.buzzwole, getBuzzWoleStats());
 PokemonStatsMap.set(PokemonNamesEnum['mr.mime'], getMrmimeStats());
