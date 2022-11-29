@@ -14,6 +14,7 @@ export enum PokemonNamesEnum {
   delphox = 'delphox',
   slowbro = 'slowbro',
   cramorant = 'cramorant',
+  duraludon = 'duraludon',
   decidueye = 'decidueye',
   eldegoss = 'eldegoss',
   greninja = 'greninja',
