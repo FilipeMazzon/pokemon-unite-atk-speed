@@ -6,6 +6,7 @@ import { AEGISLASH_ATK_SPEED_BUFF } from './pokemons/aegislash/atkSpeedBuff.cons
 import { BUZZWOLE_ATK_SPEED_BUFF } from './pokemons/buzzwole/atkSpeedBuff.constant';
 import { MACHAMP_ATK_SPEED_BUFF } from './pokemons/machamp/atkSpeedBuff.constant';
 import { CINDERACE_ATK_SPEED_BUFF } from './pokemons/cinderace/atkSpeedBuff.constant';
+import { ALOLA_NINETALES_ATK_SPEED_BUFF } from './pokemons/alola ninetales/atkSpeedBuff.constant';
 
 export const GENERIC_BUFFS_NAMES: string[] = [...Object.keys(BUFF_GENERIC)];
 
@@ -39,4 +40,8 @@ pokemonsBuffsNamesMap.set(
   Object.keys(DECIDUEYE_ATK_SPEED_BUFF),
 );
 
+pokemonsBuffsNamesMap.set(
+  PokemonNamesEnum.alolaNinetales,
+  Object.keys(ALOLA_NINETALES_ATK_SPEED_BUFF),
+);
 export default pokemonsBuffsNamesMap;

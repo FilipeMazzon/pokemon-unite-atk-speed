@@ -5,6 +5,7 @@ import { buzzwoleSpeed } from 'src/infrastructure/storage/pokemons/buzzwole/spee
 import { absolSpeed } from './absol/speed.helper';
 import { aegislashSpeed } from './aegislash/speed.helper';
 import { machampSpeed } from './machamp/speed.helper';
+import { alolaNinetalesSpeed } from './alola ninetales/speed.helper';
 
 const SpeedBuffMap = new Map<
   PokemonNamesEnum,
@@ -20,5 +21,6 @@ SpeedBuffMap.set(PokemonNamesEnum.absol, absolSpeed);
 SpeedBuffMap.set(PokemonNamesEnum.buzzwole, buzzwoleSpeed);
 SpeedBuffMap.set(PokemonNamesEnum.aegislash, aegislashSpeed);
 SpeedBuffMap.set(PokemonNamesEnum.machamp, machampSpeed);
+SpeedBuffMap.set(PokemonNamesEnum.alolaNinetales, alolaNinetalesSpeed);
 
 export default SpeedBuffMap;
