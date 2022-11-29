@@ -21,5 +21,6 @@ export enum PokemonNamesEnum {
   machamp = 'machamp',
   mamoswine = 'mamoswine',
   tyranitar = 'tyranitar',
+  venusaur = 'venusaur',
   wigglytuff = 'wigglytuff',
 }
