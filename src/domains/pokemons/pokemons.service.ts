@@ -6,7 +6,7 @@ import { PokemonStats } from '../attributes/interfaces/pokemonStats.interface';
 @Injectable()
 export class PokemonsService {
   findNames(): PokemonNamesEnum[] {
-    return Object.keys(PokemonNamesEnum) as PokemonNamesEnum[];
+    return Object.keys(PokemonNamesEnum).sort() as PokemonNamesEnum[];
   }
 
   findByName(name: PokemonNamesEnum): PokemonStats[] {
