@@ -15,6 +15,7 @@ import { getEldegossStats } from './eldegoss/statsBase.helper';
 import { getWigglytuffStats } from './wigglytuff/statsBase.helper';
 import { getDecidueyeStats } from './decidueye/statsBase.helper';
 import { getCinderaceStats } from './cinderace/statsBase.helper';
+import { getCramorantStats } from './cramorant/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -33,5 +34,6 @@ PokemonStatsMap.set(PokemonNamesEnum.blissey, getBlisseyStats());
 PokemonStatsMap.set(PokemonNamesEnum.eldegoss, getEldegossStats());
 PokemonStatsMap.set(PokemonNamesEnum.wigglytuff, getWigglytuffStats());
 PokemonStatsMap.set(PokemonNamesEnum.cinderace, getCinderaceStats());
+PokemonStatsMap.set(PokemonNamesEnum.cramorant, getCramorantStats());
 
 export default PokemonStatsMap;

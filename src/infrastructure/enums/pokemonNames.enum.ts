@@ -7,6 +7,7 @@ export enum PokemonNamesEnum {
   blissey = 'blissey',
   buzzwole = 'buzzwole',
   cinderace = 'cinderace',
+  cramorant = 'cramorant',
   decidueye = 'decidueye',
   eldegoss = 'eldegoss',
   greninja = 'greninja',
