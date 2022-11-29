@@ -34,6 +34,7 @@ import { getScytherStats } from './scyther/statsBase.helper';
 import { getTrevenantStats } from './trevenant/statsBase.helper';
 import { getZoroarkStats } from './zoroark/statsBase.helper';
 import { getGengarStats } from './gengar/statsBase.helper';
+import { getDragoniteStats } from './dragonite/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -72,5 +73,6 @@ PokemonStatsMap.set(PokemonNamesEnum.scyther, getScytherStats());
 PokemonStatsMap.set(PokemonNamesEnum.trevenant, getTrevenantStats());
 PokemonStatsMap.set(PokemonNamesEnum.zoroark, getZoroarkStats());
 PokemonStatsMap.set(PokemonNamesEnum.gengar, getGengarStats());
+PokemonStatsMap.set(PokemonNamesEnum.dragonite, getDragoniteStats());
 
 export default PokemonStatsMap;

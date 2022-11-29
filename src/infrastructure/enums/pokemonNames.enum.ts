@@ -14,6 +14,7 @@ export enum PokemonNamesEnum {
   greedent = 'greedent',
   scizor = 'scizor',
   gengar = 'gengar',
+  dragonite = 'dragonite',
   scyther = 'scyther',
   trevenant = 'trevenant',
   zoroark = 'zoroark',
