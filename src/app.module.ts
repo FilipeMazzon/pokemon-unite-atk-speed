@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { BuffsModule } from './domains/buffs/buffs.module';
 import { AttributesModule } from './domains/attributes/attributes.module';
 import { PokemonsModule } from './domains/pokemons/pokemons.module';
+import { ItemsModule } from './domains/items/items.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { PokemonsModule } from './domains/pokemons/pokemons.module';
     BuffsModule,
     AttributesModule,
     PokemonsModule,
+    ItemsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
