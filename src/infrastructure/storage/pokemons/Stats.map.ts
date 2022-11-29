@@ -38,6 +38,7 @@ import { getDragoniteStats } from './dragonite/statsBase.helper';
 import { getGarchompStats } from './garchomp/statsBase.helper';
 import { getTsareenaStats } from './tsareena/statsBase.helper';
 import { getZeraoraStats } from './zeraora/statsBase.helper';
+import { getGlaceonStats } from './glaceon/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -80,5 +81,6 @@ PokemonStatsMap.set(PokemonNamesEnum.dragonite, getDragoniteStats());
 PokemonStatsMap.set(PokemonNamesEnum.garchomp, getGarchompStats());
 PokemonStatsMap.set(PokemonNamesEnum.tsareena, getTsareenaStats());
 PokemonStatsMap.set(PokemonNamesEnum.zeraora, getZeraoraStats());
+PokemonStatsMap.set(PokemonNamesEnum.glaceon, getGlaceonStats());
 
 export default PokemonStatsMap;
