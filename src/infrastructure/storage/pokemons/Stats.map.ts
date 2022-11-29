@@ -19,6 +19,9 @@ import { getCramorantStats } from './cramorant/statsBase.helper';
 import { getAlolaNinetalesStats } from './alola ninetales/statsBase.helper';
 import { getSlowbroStats } from './slowbro/statsBase.helper';
 import { getDelphoxStats } from './delphox/statsBase.helper';
+import { getEspeonStats } from './espeon/statsBase.helper';
+import { getGardevoirStats } from './gardevoir/statsBase.helper';
+import { getPikachuStats } from './pikachu/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -28,6 +31,9 @@ PokemonStatsMap.set(PokemonNamesEnum.greninja, getGreninjaStats());
 PokemonStatsMap.set(PokemonNamesEnum.absol, getAbsolStats());
 PokemonStatsMap.set(PokemonNamesEnum.delphox, getDelphoxStats());
 PokemonStatsMap.set(PokemonNamesEnum.slowbro, getSlowbroStats());
+PokemonStatsMap.set(PokemonNamesEnum.espeon, getEspeonStats());
+PokemonStatsMap.set(PokemonNamesEnum.gardevoir, getGardevoirStats());
+PokemonStatsMap.set(PokemonNamesEnum.pikachu, getPikachuStats());
 PokemonStatsMap.set(PokemonNamesEnum.buzzwole, getBuzzWoleStats());
 PokemonStatsMap.set(PokemonNamesEnum['mr.mime'], getMrmimeStats());
 PokemonStatsMap.set(PokemonNamesEnum.aegislash, getAegislashStats());

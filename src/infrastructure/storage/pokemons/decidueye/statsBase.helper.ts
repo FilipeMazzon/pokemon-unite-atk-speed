@@ -1,5 +1,4 @@
-/* eslint-disable */
-import { PokemonStats } from "../../../../domains/attributes/interfaces/pokemonStats.interface";
+import { PokemonStats } from '../../../../domains/attributes/interfaces/pokemonStats.interface';
 
 export const getDecidueyeStats = (): PokemonStats[] => {
   return [
@@ -17,6 +16,6 @@ export const getDecidueyeStats = (): PokemonStats[] => {
     { level: 12, atkSpeed: 77.28 },
     { level: 13, atkSpeed: 89.02 },
     { level: 14, atkSpeed: 103.1 },
-    { level: 15, atkSpeed: 120 }
+    { level: 15, atkSpeed: 120 },
   ];
 };
