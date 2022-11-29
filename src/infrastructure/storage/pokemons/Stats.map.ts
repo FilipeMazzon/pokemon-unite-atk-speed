@@ -28,6 +28,11 @@ import { getTalonflameStats } from './talonflame/statsBase.helper';
 import { getHoopaStats } from './hoopa/statsBase.helper';
 import { getLucarioStats } from './lucario/statsBase.helper';
 import { getSnorlaxStats } from './snorlax/statsBase.helper';
+import { getDodrioStats } from './dodrio/statsBase.helper';
+import { getScizorStats } from './scizor/statsBase.helper';
+import { getScytherStats } from './scyther/statsBase.helper';
+import { getTrevenantStats } from './trevenant/statsBase.helper';
+import { getZoroarkStats } from './zoroark/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -59,5 +64,11 @@ PokemonStatsMap.set(PokemonNamesEnum.talonflame, getTalonflameStats());
 PokemonStatsMap.set(PokemonNamesEnum.hoopa, getHoopaStats());
 PokemonStatsMap.set(PokemonNamesEnum.lucario, getLucarioStats());
 PokemonStatsMap.set(PokemonNamesEnum.snorlax, getSnorlaxStats());
+PokemonStatsMap.set(PokemonNamesEnum.dodrio, getDodrioStats());
+PokemonStatsMap.set(PokemonNamesEnum.greedent, getDodrioStats());
+PokemonStatsMap.set(PokemonNamesEnum.scizor, getScizorStats());
+PokemonStatsMap.set(PokemonNamesEnum.scyther, getScytherStats());
+PokemonStatsMap.set(PokemonNamesEnum.trevenant, getTrevenantStats());
+PokemonStatsMap.set(PokemonNamesEnum.zoroark, getZoroarkStats());
 
 export default PokemonStatsMap;
