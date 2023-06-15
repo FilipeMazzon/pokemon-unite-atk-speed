@@ -17,6 +17,6 @@ export const getTyranitarStats = (): PokemonStats[] => {
     { level: 12, atkSpeed: 22.1 },
     { level: 13, atkSpeed: 24.23 },
     { level: 14, atkSpeed: 26.79 },
-    { level: 15, atkSpeed: 29.86 }
+    { level: 15, atkSpeed: 30 }
   ];
 };
