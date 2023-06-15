@@ -41,4 +41,7 @@ export enum PokemonNamesEnum {
   wigglytuff = 'wigglytuff',
   clefable = 'clefable',
   chandelure = 'chandelure',
+  comfey = 'comfey',
+  mew = 'mew',
+  sableye = 'sableye',
 }

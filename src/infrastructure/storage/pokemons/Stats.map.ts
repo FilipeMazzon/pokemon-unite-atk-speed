@@ -41,6 +41,9 @@ import { getZeraoraStats } from './zeraora/statsBase.helper';
 import { getGlaceonStats } from './glaceon/statsBase.helper';
 import { getClefableStats } from './clefable/statsBase.helper';
 import { getChandelure } from './chandelure/statsBase.helper';
+import { getComfeyStats } from './comfey/statsBase.helper';
+import { getMewStats } from './mew/statsBase.helper';
+import { getSableyeStats } from './sableye/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -86,5 +89,8 @@ PokemonStatsMap.set(PokemonNamesEnum.zeraora, getZeraoraStats());
 PokemonStatsMap.set(PokemonNamesEnum.glaceon, getGlaceonStats());
 PokemonStatsMap.set(PokemonNamesEnum.clefable, getClefableStats());
 PokemonStatsMap.set(PokemonNamesEnum.chandelure, getChandelure());
+PokemonStatsMap.set(PokemonNamesEnum.comfey, getComfeyStats());
+PokemonStatsMap.set(PokemonNamesEnum.mew, getMewStats());
+PokemonStatsMap.set(PokemonNamesEnum.sableye, getSableyeStats());
 
 export default PokemonStatsMap;
