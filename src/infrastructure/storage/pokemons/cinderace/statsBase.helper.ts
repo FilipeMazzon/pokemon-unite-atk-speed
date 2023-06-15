@@ -4,19 +4,19 @@ import { PokemonStats } from "../../../../domains/attributes/interfaces/pokemonS
 export const getCinderaceStats = (): PokemonStats[] => {
   return [
     { level: 1, atkSpeed: 10 },
-    { level: 2, atkSpeed: 11.57 },
-    { level: 3, atkSpeed: 13.46 },
-    { level: 4, atkSpeed: 15.73 },
-    { level: 5, atkSpeed: 23.96 },
-    { level: 6, atkSpeed: 27.24 },
-    { level: 7, atkSpeed: 42.17 },
-    { level: 8, atkSpeed: 46.89 },
-    { level: 9, atkSpeed: 52.55 },
-    { level: 10, atkSpeed: 59.34 },
-    { level: 11, atkSpeed: 67.5 },
-    { level: 12, atkSpeed: 77.28 },
-    { level: 13, atkSpeed: 89.02 },
-    { level: 14, atkSpeed: 103.1 },
-    { level: 15, atkSpeed: 120 }
+    { level: 2, atkSpeed: 11.87 },
+    { level: 3, atkSpeed: 14.11 },
+    { level: 4, atkSpeed: 16.8 },
+    { level: 5, atkSpeed: 26.53 },
+    { level: 6, atkSpeed: 30.4 },
+    { level: 7, atkSpeed: 48.04 },
+    { level: 8, atkSpeed: 53.61 },
+    { level: 9, atkSpeed: 60.3 },
+    { level: 10, atkSpeed: 68.33 },
+    { level: 11, atkSpeed: 77.96 },
+    { level: 12, atkSpeed: 89.52 },
+    { level: 13, atkSpeed: 103.39 },
+    { level: 14, atkSpeed: 120.03 },
+    { level: 15, atkSpeed: 140 }
   ];
 };
