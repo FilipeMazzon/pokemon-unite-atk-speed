@@ -39,4 +39,5 @@ export enum PokemonNamesEnum {
   venusaur = 'venusaur',
   talonflame = 'talonflame',
   wigglytuff = 'wigglytuff',
+  clefable = 'clefable',
 }

@@ -39,6 +39,7 @@ import { getGarchompStats } from './garchomp/statsBase.helper';
 import { getTsareenaStats } from './tsareena/statsBase.helper';
 import { getZeraoraStats } from './zeraora/statsBase.helper';
 import { getGlaceonStats } from './glaceon/statsBase.helper';
+import { getClefableStats } from './clefable/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -82,5 +83,6 @@ PokemonStatsMap.set(PokemonNamesEnum.garchomp, getGarchompStats());
 PokemonStatsMap.set(PokemonNamesEnum.tsareena, getTsareenaStats());
 PokemonStatsMap.set(PokemonNamesEnum.zeraora, getZeraoraStats());
 PokemonStatsMap.set(PokemonNamesEnum.glaceon, getGlaceonStats());
+PokemonStatsMap.set(PokemonNamesEnum.clefable, getClefableStats());
 
 export default PokemonStatsMap;
