@@ -44,4 +44,5 @@ export enum PokemonNamesEnum {
   comfey = 'comfey',
   mew = 'mew',
   sableye = 'sableye',
+  leafeon = 'leafeon',
 }

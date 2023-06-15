@@ -44,6 +44,7 @@ import { getChandelure } from './chandelure/statsBase.helper';
 import { getComfeyStats } from './comfey/statsBase.helper';
 import { getMewStats } from './mew/statsBase.helper';
 import { getSableyeStats } from './sableye/statsBase.helper';
+import { getLeafeonStats } from './leafeon/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -92,5 +93,6 @@ PokemonStatsMap.set(PokemonNamesEnum.chandelure, getChandelure());
 PokemonStatsMap.set(PokemonNamesEnum.comfey, getComfeyStats());
 PokemonStatsMap.set(PokemonNamesEnum.mew, getMewStats());
 PokemonStatsMap.set(PokemonNamesEnum.sableye, getSableyeStats());
+PokemonStatsMap.set(PokemonNamesEnum.leafeon, getLeafeonStats());
 
 export default PokemonStatsMap;
