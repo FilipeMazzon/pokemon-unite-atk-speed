@@ -50,6 +50,7 @@ import { getDragapultStats } from './dragapult/statsBase.helper';
 import { getGoodraStats } from './goodra/statsBase.helper';
 import { getLaprasStats } from './lapras/statsBase.helper';
 import { getSylveonStats } from './sylveon/statsBase.helper';
+import { getUmbreonStats } from './umbreon/statsBase.helper';
 
 const PokemonStatsMap = new Map<PokemonNamesEnum, PokemonStats[]>();
 
@@ -104,5 +105,6 @@ PokemonStatsMap.set(PokemonNamesEnum.dragapult, getDragapultStats());
 PokemonStatsMap.set(PokemonNamesEnum.goodra, getGoodraStats());
 PokemonStatsMap.set(PokemonNamesEnum.lapras, getLaprasStats());
 PokemonStatsMap.set(PokemonNamesEnum.sylveon, getSylveonStats());
+PokemonStatsMap.set(PokemonNamesEnum.umbreon, getUmbreonStats());
 
 export default PokemonStatsMap;
